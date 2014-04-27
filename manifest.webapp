@@ -1,0 +1,13 @@
+{
+  "name": "UrbanAgro",
+  "description": "aplicacion si joven",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/img/AppIcon/ico_128.png"
+  },
+  "developer": {
+    "name": "Oportunity Team",
+    "url": "http://your-homepage-here.org"
+  },
+  "default_locale": "es"
+}

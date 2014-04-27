@@ -1,0 +1,458 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="Jquery/jquery-2.1.0.min.js"></script>
+    <script src="Jquery/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <link href="Jquery/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" rel="stylesheet" />
+    <title>Urban Agro</title>
+</head>
+<body>
+    <!--Inicio-->
+    <div data-role="page" id="inicio" data-theme="b">
+        <div data-role="header" data-position="fixed">
+            <h1>
+                Urban Agro
+            </h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="true">
+                <li>
+                    <a href="#cultivo">
+                        <img src="img/_1.png" />
+                        <h2>Crea tu Cultivo</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#huerta">
+                        <img src="img/_12.png" />
+                        <h2>Mi Huerta</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#mercado">
+                        <img src="img/_3.png" />
+                        <h2>Mercado</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#estproduccion">
+                        <img src="img/_7.png" />
+                        <h2>Estadisticas</h2>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h6>© dfquintero/David Vallejo</h6>
+        </div>
+    </div>
+
+    <!--2Inicio-->
+    <div data-role="page" id="cultivo" data-theme="b">
+        <div data-role="header" data-add-back-btn="true">
+            <h1>
+                Cultivo
+            </h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="true">
+                <li data-role="list-divider">
+                    Elige tu espacio
+                </li>
+                <li>
+                    <a href="#terraza1">
+                        <img src="img/_1.png" />
+                        <h2>Terraza</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#pared1">
+                        <img src="img/_1.png" />
+                        <h2>Pared</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#interior1">
+                        <img src="img/_1.png" />
+                        <h2>Interior</h2>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h6>© dfquintero/David Vallejo</h6>
+        </div>
+    </div>
+
+    <div data-role="page" id="huerta" data-theme="b">
+        <div data-role="header" data-position="fixed" data-add-back-btn="true">
+            <h1>
+                Mi Huerta
+            </h1>
+        </div>
+        <div data-role="content">
+            <center>
+                <div style="border: 1px solid rgb(184, 184, 184); border-image: none; width: 288px; height: 200px; position: relative; background-color: rgb(251, 251, 251);"
+                     data-controltype="image">
+                    <img style="left: 50%; top: 50%; margin-top: -18px; margin-left: -16px; position: absolute;"
+                         alt="image" src="https://codiqa.com/static/images/v2/image.png">
+                </div>
+            </center>
+            <div data-role="collapsible-set" data-theme="a">
+                <div data-role="collapsible">
+                    <h3>
+                        Información
+                    </h3>
+                    <div data-role="fieldcontain" data-controltype="textinput">
+                        <label for="textinput2">
+                            Nombre
+                        </label>
+                        <input id="textinput2" type="text" placeholder="" value="" data-mini="true">
+                    </div>
+                    <div data-role="fieldcontain" data-controltype="textinput">
+                        <label for="textinput3">
+                            email
+                        </label>
+                        <input id="textinput3" type="email" placeholder="" value="" data-mini="true">
+                    </div>
+                    <div data-role="fieldcontain" data-controltype="textinput">
+                        <label for="textinput4">
+                            Contraseña
+                        </label>
+                        <input id="textinput4" type="password" placeholder="" value="" data-mini="true">
+                    </div>
+                    <div data-role="fieldcontain" data-controltype="textinput">
+                        <label for="textinput5">
+                            Dirección
+                        </label>
+                        <input id="textinput5" type="text" placeholder="" value="" data-mini="true">
+                    </div>
+                    <div data-role="fieldcontain" data-controltype="textinput">
+                        <label for="textinput6">
+                            Cedula
+                        </label>
+                        <input id="textinput6" type="number" placeholder="" value="" data-mini="true">
+                    </div>
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <input type="submit" value="Cancelar">
+                        </div>
+                        <div class="ui-block-b">
+                            <input type="submit" value="Guardar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul data-role="listview" data-inset="true" data-theme="a">
+                <li role="heading" data-role="list-divider">
+                    Mis Productos
+                </li>
+                <li>
+                    <a href="">
+                        Fresa
+                    </a>
+                </li>
+                <li>
+                    <a href="#page3">
+                        Arveja
+                    </a>
+                </li>
+                <li>
+                    <a href="#page3">
+                        Zanahoria
+                    </a>
+                </li>
+                <li>
+                    <a href="#page3">
+                        Fríjol
+                    </a>
+                </li>
+                <li>
+                    <a href="#page3">
+                        Maíz
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h6>© dfquintero/David Vallejo</h6>
+        </div>
+    </div>
+
+    <div data-role="page" id="mercado" data-theme="b">
+        <div data-role="header" data-position="fixed" data-add-back-btn="true">
+            <h1>
+                Mercado
+            </h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="true" data-theme="a">
+                <li>
+                    <a href="#arveja">
+                        <img src="img/10.png" />
+                        <h2>Arveja</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#brocoli">
+                        <img src="img/11.png" />
+                        <h2>Brocoli</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#cebolla">
+                        <img src="img/12.png" />
+                        <h2>Cebolla</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#fresa">
+                        <img src="img/13.png" />
+                        <h2>Fresa</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#frijol">
+                        <img src="img/14.png" />
+                        <h2>Fríjol</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#hierbabuena">
+                        <img src="img/2.png" />
+                        <h2>Hierbabuena</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#maiz">
+                        <img src="img/4.png" />
+                        <h2>Maíz</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#papa">
+                        <img src="img/5.png" />
+                        <h2>Papa</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#quinua">
+                        <img src="img/6.png" />
+                        <h2>Quinua</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#repollo">
+                        <img src="img/8.png" />
+                        <h2>Repollo</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#zanahoria">
+                        <img src="img/9.png" />
+                        <h2>Zanahoria</h2>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h6>© dfquintero/David Vallejo</h6>
+        </div>
+    </div>
+
+    <!--EstProduccion-->
+    <div data-role="page" id="estproduccion" data-theme="b">
+        <div data-role="header" data-position="fixed" data-add-back-btn="true">
+            <h1>
+                Estadisticas
+            </h1>
+        </div>
+        <div data-role="content" data-theme="a">
+            <center>
+                <img width="100%" src="img/est/torta1.png" />
+            </center>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#estproduccion" data-icon="info" class="ui-btn-active ui-state-persist">
+                            Producción
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#estdemanda" data-icon="info">
+                            Demanda
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#estprecios" data-icon="info">
+                            Precios
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <h6>© dfquintero/David Vallejo</h6>
+        </div>
+    </div>
+    <!--EstDemanda-->
+    <div data-role="page" id="estdemanda" data-theme="b">
+        <div data-role="header" data-position="fixed" data-add-back-btn="true">
+            <h1>
+                Estadisticas
+            </h1>
+        </div>
+        <div data-role="content" data-theme="a">
+            <center>
+                <img width="100%" src="img/est/torta2.png" />
+            </center>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#estproduccion" data-icon="info">
+                            Producción
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#estdemanda" data-icon="info" class="ui-btn-active ui-state-persist">
+                            Demanda
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#estprecios" data-icon="info">
+                            Precios
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <h6>© dfquintero/David Vallejo</h6>
+        </div>
+    </div>
+    <!--EstPrecios-->
+    <div data-role="page" id="estprecios" data-theme="b">
+        <div data-role="header" data-position="fixed" data-add-back-btn="true">
+            <h1>
+                Estadisticas
+            </h1>
+        </div>
+        <div data-role="content">
+            <div data-role="collapsible-set" data-theme="a">
+                <div data-role="collapsible">
+                    <h3>
+                        Arveja
+                    </h3>
+                    <div>
+                        <img src="img/est/Imagen1.png" width="100%" />
+                    </div>
+                </div>
+                <div data-role="collapsible">
+                    <h3>
+                        Brocoli
+                    </h3>
+                    <div>
+                        <img src="img/est/Imagen2.png" width="100%" />
+                    </div>
+                </div>
+                <div data-role="collapsible">
+                    <h3>
+                        Cebolla
+                    </h3>
+                    <div>
+                        <img src="img/est/Imagen3.png" width="100%" />
+                    </div>
+                </div>
+                <div data-role="collapsible">
+                    <h3>
+                        Fresa
+                    </h3>
+                    <div>
+                        <img src="img/est/Imagen4.png" width="100%" />
+                    </div>
+                </div>
+                <div data-role="collapsible">
+                    <h3>
+                        Fríjol
+                    </h3>
+                    <div>
+                        <img src="img/est/Imagen5.png" width="100%" />
+                    </div>
+                </div>
+                <div data-role="collapsible">
+                    <h3>
+                        Hierbabuena
+                    </h3>
+                    <div>
+                        <img src="img/est/Imagen6.png" width="100%" />
+                    </div>
+                </div>
+                <div data-role="collapsible">
+                    <h3>
+                        Maíz
+                    </h3>
+                    <div>
+                        <img src="img/est/Imagen7.png" width="100%" />
+                    </div>
+                </div>
+                <div data-role="collapsible">
+                    <h3>
+                        Papa
+                    </h3>
+                    <div>
+                        <img src="img/est/Imagen8.png" width="100%" />
+                    </div>
+                </div>
+                <div data-role="collapsible">
+                    <h3>
+                        Quinua
+                    </h3>
+                    <div>
+                        <img src="img/est/Imagen9.png" width="100%" />
+                    </div>
+                </div>
+                <div data-role="collapsible">
+                    <h3>
+                        Repollo
+                    </h3>
+                    <div>
+                        <img src="img/est/Imagen10.png" width="100%" />
+                    </div>
+                </div>
+                <div data-role="collapsible">
+                    <h3>
+                        Zanahoria
+                    </h3>
+                    <div>
+                        <img src="img/est/Imagen11.png" width="100%" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#estproduccion" data-icon="info">
+                            Producción
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#estdemanda" data-icon="info">
+                            Demanda
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#estprecios" data-icon="info" class="ui-btn-active ui-state-persist">
+                            Precios
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <h6>© dfquintero/David Vallejo</h6>
+        </div>
+    </div>
+
+</body>
+</html>
